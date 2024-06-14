@@ -28,6 +28,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background: rgb(217,16,76);
+  background: linear-gradient(24deg, rgba(217,16,76,1) 0%, rgba(79,79,170,1) 56%, rgba(0,29,136,1) 100%);                                           
 }
 
 h1 {
@@ -65,4 +67,14 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+.container{
+  background-color: #fff;
+  border-radius: .5rem;
+  padding: 2.5rem;
+  padding-bottom: 3rem;
+  text-align: center;
+
 }
