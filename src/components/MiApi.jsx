@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Buscador from './Buscador';
+import MyCard from './MyCard';
 
 
 function MiApi(){
@@ -45,15 +46,23 @@ function MiApi(){
     //Div con buscador, y listado
     return(
         <div>
-            <h2>Animales en Adopción</h2>
+            <h2 className='titulo'>Animales en Adopción</h2>
             <Buscador query={query} setQuery={setQuery}/>
-                <ul>
+                <div className='container row row-cols-1 row-cols-md-4 g-2 animales'>
                     {sortedData.map((animales)=>
-                        <li key={animales.nombre}>
-                            <a href={animales.imagen}>{animales.nombre}</a>
-                        </li>
+                        <MyCard
+                        key={animales.nombre}
+                        nombre={animales.nombre}
+                        titulo={animales.nombre}
+                        img={animales.imagen}
+                        descripcion={animales.desc_personalidad}
+                        href={animales.url}
+                        bg="success"
+                        textButton="Más Información"/>
+                        
                     )}
-                </ul>
+                </div>
+                
         </div>
     )
 }

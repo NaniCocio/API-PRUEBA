@@ -28,8 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background: rgb(217,16,76);
-  background: linear-gradient(24deg, rgba(217,16,76,1) 0%, rgba(79,79,170,1) 56%, rgba(0,29,136,1) 100%);                                           
+  background-image: radial-gradient(circle at 50% 50%, #ffe0ed 0, #ffe0e7 3.33%, #ffe0e2 6.67%, #ffe1de 10%, #ffe2d9 13.33%, #ffe3d5 16.67%, #ffe4d1 20%, #ffe5ce 23.33%, #ffe7cb 26.67%, #ffe8ca 30%, #ffeac8 33.33%, #fcecc8 36.67%, #f7edc8 40%, #f2efc9 43.33%, #ecf1cb 46.67%, #e6f2cd 50%, #e0f3d0 53.33%, #daf5d4 56.67%, #d5f6d8 60%, #d0f6dc 63.33%, #cbf7e1 66.67%, #c6f8e6 70%, #c3f8eb 73.33%, #c0f8f0 76.67%, #bef8f5 80%, #bcf8fa 83.33%, #bcf7ff 86.67%, #bdf7ff 90%, #bff6ff 93.33%, #c2f5ff 96.67%, #c5f4ff 100%);                                  
 }
 
 h1 {
@@ -69,12 +68,19 @@ button:focus-visible {
   }
 }
 
-
 .container{
   background-color: #fff;
   border-radius: .5rem;
   padding: 2.5rem;
   padding-bottom: 3rem;
   text-align: center;
+}
 
+.titulo{
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.animales {
+  margin-top: .2rem;
 }
