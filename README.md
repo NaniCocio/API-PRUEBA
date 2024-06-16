@@ -3,4 +3,4 @@
     Desafío realizado en base a React, y consumo de API
 
 
-    url vídeo youtube: 
+    url vídeo youtube: https://youtu.be/36JpJnG-cag
